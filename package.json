@@ -1,0 +1,25 @@
+{
+  "devDependencies": {
+    "webpack": "^5.39.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "name": "tododemo",
+  "description": "ToDo list",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production --watch",
+    "dev": "webpack --mode development --watch",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlunaklick/todo_list.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vlunaklick/todo_list/issues"
+  },
+  "homepage": "https://github.com/vlunaklick/todo_list#readme"
+}
