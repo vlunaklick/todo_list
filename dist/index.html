@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do list</title>
     <script src="https://kit.fontawesome.com/8f8817d5ec.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header-p">
+        <i class="fas fa-address-book icon listes"></i>
         <div class="head-Title">
             <h1 class="titleT">ToDo List</h1>
         </div>
@@ -20,18 +20,30 @@
     <div id="mainthing">
 
         <nav class="navP">
-            <div class="menuDiv alwaM">
+            <div class="menuDiv hoverL">
+                <i class="fas fa-house-user iconM"></i>
                 <h3 class="menuT">General</h3>
             </div>
-            
-            <div class="menuDiv alwaM">
+            <div class="bracketM"></div>
+            <div class="menuDiv menuPlus">
+                <i class="fas fa-tasks iconM"></i>
                 <h3 class="menuT">Your lists</h3>
+                <i id="add" class="fas fa-plus iconM plus"></i>
+            </div>
+            <div class="listCreated">
+                
+                <div class="bracketM"></div>
             </div>
             
         </nav>
 
         <main id="content">
-
+            <div class="titleCont">
+                <i class="fas fa-house-user iconC icoCont"></i>
+                <h1 id="title" class="iconC">General</h1>
+            </div>
+            
+            <div class="bracketM"></div>
         </main>
         
     </div>

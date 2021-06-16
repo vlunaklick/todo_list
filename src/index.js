@@ -1,3 +1,11 @@
+import './style.css';
+
+
+
+
+
+/* Button responsive */
+
 const navBtn = document.getElementById('navRespo');
 
 const nav = document.getElementsByClassName('navP');

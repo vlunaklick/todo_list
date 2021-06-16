@@ -12,9 +12,13 @@
     --tit-fot-co: #F3F4ED;
     --hov-icon-foot: #989993;
     --menu-nav-res: #F2A154;
+    --menu-nav-responsive: #f2a054f8;
+    --main-back: #F7F6E7;
     --main-back: #F7F6E7;
     --menu-hover: #ac723c;
     --menu-selected: #d38c49;
+    --font-col-nav: #f1f1ef;
+    --font-col-cont: #000;
 }
 
 body{
@@ -46,6 +50,12 @@ body{
 
 .icon{
     font-size: var(--title-h1);
+    cursor: pointer;
+}
+
+.iconM{
+    margin-left: 0.5rem;
+    color: var(--font-col-nav);
 }
 
 .footer-p{
@@ -66,7 +76,7 @@ body{
 .menuT{
     font-size: var(--h3-size);
     margin-left: 1rem;
-    
+    color: var(--font-col-nav);
 }
 
 .iconF{
@@ -82,22 +92,26 @@ body{
     align-items: center;
     height: 5%;
     width: 100%;
-    cursor: pointer;
     border-radius: 5px;
-    margin-top: 0.125rem;
 }
 
-.menuDiv:hover{
+.hoverL:hover{
     background-color: var(--menu-hover);
+    cursor: pointer;
 }
 
 .navP{
     flex-direction: column;
-    width: 10%;
+    width: 15%;
     background-color: var(--menu-nav-res);
     display: flex;
     border-right: 1px solid #000;
-    padding: 1rem;
+    align-items: center;
+    padding: 0.75rem;
+}
+
+.listes{
+    margin-right: 0.5rem;
 }
 
 #mainthing{
@@ -112,8 +126,47 @@ body{
 }
 
 #content{
-    width: 80%;
+    width: 100%;
+    padding: 0.75rem 1rem 1rem 1rem;
+    
 }
+
+.bracketM{
+    border-bottom: 1px solid #000;
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.titleCont{
+    display: flex;
+    align-items: center;
+}
+
+.iconC{
+    font-size: 2rem;
+}
+
+.icoCont{
+    margin-right: 0.4rem;
+}
+
+.plus{
+    display: flex;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 1.5rem;
+    height: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.plus:hover{
+    background-color: var(--menu-hover);
+}
+
 
 
 @media screen and (max-width: 390px) {
@@ -124,11 +177,28 @@ body{
 
 @media screen and (max-width: 1000px) {
     .navP{
-        background-color: transparent;
         border-right: 0;
         width: 100%;
-        background-color: transparent;
         height: inherit;
+        padding: 0;
+        position: absolute;
+        background-color: transparent;
+    }
+    .menuDiv{
+        height: 100%;
+        border-radius: 0;
+        padding: 0.35rem;
+    }
+    .hoverL:hover{
+        cursor: pointer;
+    }
+    .plus{
+
+    }
+    .bracketM{
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     #mainthing{
         flex-direction: column;
@@ -140,6 +210,6 @@ body{
         justify-content: end;
     }
     .menuDiv{
-        background-color: var(--menu-nav-res);
+        background-color: var(--menu-nav-responsive);
     }
 }
