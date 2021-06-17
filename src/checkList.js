@@ -3,6 +3,6 @@ export default function(){
         let devuelta = JSON.parse(localStorage.getItem('lists'))
         return devuelta;
     } else {
-        return {}
+        return {"General":[]}
     }
 }

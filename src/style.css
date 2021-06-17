@@ -181,6 +181,32 @@ body{
     align-items: center;
 }
 
+.allPuc{
+    background-color: var(--back-add);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.marcoNotes{
+    display: flex;
+    border-radius: 5px;
+    width: 25%;
+    height: 37%;
+    margin: 0 auto;
+    background-color: var(--font-col-cont);
+    color: white;
+    align-items: center;
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+    flex-direction: column;
+}
+
 .marcoListas{
     display: flex;
     border-radius: 5px;
@@ -233,6 +259,25 @@ body{
     flex-direction: column;
     align-items: center;
 }
+#tabal-b{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.first-row{
+    height: 50px;
+    border-bottom: 1px solid var(--font-col-cont);
+    text-align: left;
+    font-size: 20px;
+    color: var(--font-col-cont);
+}
+th, td{
+    border-bottom: 1px solid var(--hov-icon-foot);
+    padding: 10px 8px;
+}
+.checking{
+    margin-right: 1rem;
+}
 
 .titulosNuevos{
     display: flex;
@@ -267,6 +312,11 @@ body{
 .icoCros:hover{
     color: var(--hover-plus-cross);
     cursor: pointer;
+}
+
+#allNotes{
+    width: 100%;
+    height: 100%;
 }
 
 
