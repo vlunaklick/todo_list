@@ -2,7 +2,9 @@ import addList from './addList.js';
 import checkList from './checkList';
 import uploList from './uploList';
 import nameList from './nameList.js';
+import deleteList from './deleteList.js';
 import './style.css';
+import changeName from './titleNameCh.js';
 
 /* Important */
 
@@ -25,7 +27,8 @@ addListBtn.addEventListener('click',function(){
     let btnCan = document.getElementsByClassName('btncan');
     btnAdd[0].addEventListener('click',function(){
         let valor = inputText[0].value;
-        listaOficial.push(valor);
+        listaOficial[`${valor}`]={};
+        console.log(listaOficial)
         let newW = document.getElementsByClassName('allPan');
         uploList(listaOficial);
         nameList(listaOficial);
@@ -49,4 +52,26 @@ navBtn.addEventListener('click',function(){
     } else{
         nav[0].classList.add('hidden');
     }
+});
+
+/* Delete list */
+
+const delLisBtn = document.getElementById('deleLis')
+
+delLisBtn.addEventListener('click',function(){
+    let tituloActivo = document.getElementById('title');
+    if(!(tituloActivo.textContent == "General")){
+        deleteList(tituloActivo.textContent,listaOficial);
+        uploList(listaOficial);
+        nameList(listaOficial);
+        changeName('General');
+    }
+});
+
+/* Add ToDo to the list */
+
+const addLisBtn = document.getElementById('addnote');
+
+addLisBton.addEventListener('click',function(){
+
 });

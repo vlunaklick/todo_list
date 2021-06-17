@@ -1,8 +1,8 @@
 export default function(){
-    if (localStorage.getItem('lists') == null){
-        return ["Default"];
-    } else {
+    if (localStorage.getItem('lists') != null){
         let devuelta = JSON.parse(localStorage.getItem('lists'))
         return devuelta;
+    } else {
+        return {}
     }
 }

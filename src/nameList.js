@@ -1,12 +1,12 @@
 import changeName from './titleNameCh';
 
-export default function(array){
+export default function(testing){
     let marcoLis = document.getElementsByClassName('listCreated');
     let bracketOut = document.createElement('div');
     bracketOut.classList.add('bracketM');
     marcoLis[0].innerHTML = "";
     marcoLis[0].appendChild(bracketOut);
-    array.forEach(element => {
+    Object.keys(testing).forEach(element => {
         let div = document.createElement('div');
         let title = document.createElement('h4');
         div.classList.add('titulosNuevos');
@@ -17,7 +17,7 @@ export default function(array){
         div.append(title);
         let bracket = document.createElement('div');
         bracket.classList.add('bracketClaro')
-        if(array.slice(-1)[0] == element){
+        if(Object.keys(testing)[Object.keys(testing).length-1] == element){
             bracket.classList.replace('bracketClaro','bracketM');
         }
         marcoLis[0].appendChild(div);
@@ -25,6 +25,6 @@ export default function(array){
     });
     let btnNombres = Array.from(document.getElementsByClassName('titulosNuevos'));
     btnNombres.forEach(element => element.addEventListener('click',function(){
-        changeName(element);
+        changeName(element.innerText);
     }));
 }
