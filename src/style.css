@@ -19,6 +19,8 @@
     --menu-selected: #d38c49;
     --font-col-nav: #f1f1ef;
     --font-col-cont: #000;
+    --back-add: rgba(0,0,0,0.6);
+    --hover-plus-cross: #4d4d4d;
 }
 
 body{
@@ -128,7 +130,7 @@ body{
 #content{
     width: 100%;
     padding: 0.75rem 1rem 1rem 1rem;
-    
+    height: 100%;
 }
 
 .bracketM{
@@ -167,6 +169,105 @@ body{
     background-color: var(--menu-hover);
 }
 
+.allPan{
+    background-color: var(--back-add);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marcoListas{
+    display: flex;
+    border-radius: 5px;
+    width: 25%;
+    height: 17%;
+    margin: 0 auto;
+    background-color: var(--font-col-cont);
+    color: white;
+    align-items: center;
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+    flex-direction: column;
+}
+.tituloListas{
+    text-align: center;
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+.inputAdd{
+    margin-top: 1rem;
+}
+
+.btnAddL{
+    margin-top: 1rem;
+    width: 70%;
+}
+
+.btncan{
+    margin-top: 1rem;
+    width: 70%;
+}
+
+@media screen and (max-width: 1000px) {
+    .marcoListas{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .marcoListas{
+        width: 85%;
+    }
+}
+
+.listCreated{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulosNuevos{
+    display: flex;
+    align-items: center;
+    height: 5%;
+    width: 100%;
+    color: var(--font-col-nav);
+}
+
+.titNu{
+    margin-left: 1rem;
+}
+
+.bracketClaro{
+    border-bottom: 1px solid rgb(80, 80, 80);
+    width: 90%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.icoPl{
+    margin-left: auto;
+    margin-right: 1rem;
+    transition: 0.25;
+}
+
+.icoPl:hover{
+    color: var(--hover-plus-cross);
+    cursor: pointer;
+}
+
+.icoCros:hover{
+    color: var(--hover-plus-cross);
+    cursor: pointer;
+}
 
 
 @media screen and (max-width: 390px) {
@@ -192,10 +293,12 @@ body{
     .hoverL:hover{
         cursor: pointer;
     }
-    .plus{
-
-    }
     .bracketM{
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .bracketClaro{
         width: 100%;
         margin-top: 0;
         margin-bottom: 0;
@@ -211,5 +314,16 @@ body{
     }
     .menuDiv{
         background-color: var(--menu-nav-responsive);
+    }
+    .icoCros{
+        margin-right: 1rem;
+    }
+    #content{
+        padding: 0;
+        padding-top: 1rem;
+    }
+    .titleCont{
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
     }
 }
