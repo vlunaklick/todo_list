@@ -1,4 +1,4 @@
-# todo_list
+# Todo List
 [Link page](https://vlunaklick.github.io/todo_list/)
 
 In this project i recreated a: "**ToDo List**".
