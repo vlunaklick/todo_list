@@ -9,8 +9,6 @@
 
 ### 🔧 Future Addons
 
-   * Nocturne mode.
-
    * Better responsive.
 
    * Better design.
