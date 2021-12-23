@@ -7,19 +7,12 @@
 
 ### ✨ [Live View](https://vlunaklick.github.io/todo_list/)
 
-### 🔧 Future Addons
-
-   * Better responsive.
-
-   * Better design.
-
 ## Author
 
 👤 **vlunaklick**
 
-* Website: www.linkedin.com/in/valentín-lunaklick-548360212
 * Github: [@vlunaklick](https://github.com/vlunaklick)
-* LinkedIn: [@valentín-lunaklick](https://linkedin.com/in/valentín-lunaklick)
+* LinkedIn: [@vlunaklick](https://linkedin.com/in/vlunaklick)
 
 ## My Profile
 
