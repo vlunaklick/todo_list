@@ -33,6 +33,12 @@ export default function (testing) {
 		element.addEventListener('click', function () {
 			changeName(element.innerText)
 			createNot(testing, element.innerText)
+			const nav = document.getElementsByClassName('main-sidething')
+			if (nav[0].classList.contains('hidden')) {
+				nav[0].classList.remove('hidden')
+			} else {
+				nav[0].classList.add('hidden')
+			}
 		})
 	)
 }

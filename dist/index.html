@@ -20,7 +20,7 @@
     <div id="main">
 
         <section class="main-sidething">
-            <header class="main-sidething-menudiv main-sidething-newtitle main-sidething-menudiv-hover">
+            <header class="main-sidething-menudiv main-sidething-newtitle main-sidething-menudiv-hover menuGeneral">
                 <i class="fas fa-house-user iconM"></i>
                 <h3 class="main-sidething-menutitle">General</h3>
             </header>
@@ -41,8 +41,10 @@
             <header class="content-title">
                 <i class="fas fa-bell content-title-part content-title-iconbell"></i>
                 <h1 id="title" class="content-title-part">General</h1>
-                <i id="addNote" class="fas fa-plus-circle content-title-part content-title-iconadd"></i>
-                <i id="deleLis" class="fas fa-times-circle content-title-part content-title-icondel"></i>
+                <div class="both-icons">
+                    <i id="addNote" class="fas fa-plus-circle content-title-part content-title-iconadd"></i>
+                    <i id="deleLis" class="fas fa-times-circle content-title-part content-title-icondel"></i>
+                </div>
             </header>
             
             <div class="bracket-line"></div>
@@ -70,7 +72,10 @@
 
     <footer class="footer">
         <p class="footer-copy">Created with &hearts; in 2021</p>
-        <i class="fab fa-github footer-icon"></i>
+        <a href="https://github.com/vlunaklick" class="footer-icon" target="_blank" >
+            <i class="fab fa-github footer-icon"></i>
+        </a>
+        
     </footer>
 
     <script src="main.js"></script>

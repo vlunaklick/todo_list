@@ -24,9 +24,13 @@ export default function () {
 	btnAdd.innerHTML = 'Add list'
 	btncan.innerHTML = 'Back'
 
+	let divbtns = document.createElement('div')
+	divbtns.classList.add('center-butons')
+
 	marcoL.appendChild(inputN)
-	marcoL.appendChild(btnAdd)
-	marcoL.appendChild(btncan)
+	divbtns.appendChild(btnAdd)
+	divbtns.appendChild(btncan)
+	marcoL.appendChild(divbtns)
 	grande.appendChild(marcoL)
 	let main = document.getElementById('main')
 	let body = document.querySelector('body')

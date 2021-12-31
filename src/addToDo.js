@@ -37,6 +37,9 @@ export default function (objeto) {
 	btnAdd.innerHTML = 'Add ToDo'
 	btncan.innerHTML = 'Back'
 
+	let divbtns = document.createElement('div')
+	divbtns.classList.add('center-butons')
+
 	let labelDate = document.createElement('label')
 	labelDate.setAttribute('for', 'dDate')
 	labelDate.innerHTML = 'Due Date'
@@ -82,8 +85,9 @@ export default function (objeto) {
 	marcoL.appendChild(dueDate)
 	marcoL.appendChild(labelDue)
 	marcoL.appendChild(selector)
-	marcoL.appendChild(btnAdd)
-	marcoL.appendChild(btncan)
+	divbtns.appendChild(btnAdd)
+	divbtns.appendChild(btncan)
+	marcoL.appendChild(divbtns)
 	grande.appendChild(marcoL)
 	let main = document.getElementById('main')
 	let body = document.querySelector('body')

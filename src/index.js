@@ -18,6 +18,7 @@ let listaOficial = checkList()
 nameList(listaOficial)
 
 createNot(listaOficial, title.innerText)
+
 /* Button add list */
 
 const addListBtn = document.getElementById('add')
