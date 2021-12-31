@@ -8,49 +8,51 @@
     <script src="https://kit.fontawesome.com/8f8817d5ec.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="header-p">
+    <header class="nav-header">
         <i class="fas fa-address-book icon listes"></i>
-        <div class="head-Title">
+        <div class="nav-header-title">
             <h1 class="titleT">ToDo List</h1>
         </div>
-        <div class="navI">
-            <i id="navRespo" class="fas fa-bars icon"></i>
+        <div class="nav-header-navico">
+            <i id="nav-header-navico-responsive" class="fas fa-bars icon"></i>
         </div>
-    </div>
-    <div id="mainthing">
+    </header>
+    <div id="main">
 
-        <nav class="navP">
-            <div class="menuDiv titulosNuevos hoverL">
+        <section class="main-sidething">
+            <header class="main-sidething-menudiv main-sidething-newtitle main-sidething-menudiv-hover menuGeneral">
                 <i class="fas fa-house-user iconM"></i>
-                <h3 class="menuT">General</h3>
-            </div>
-            <div class="bracketM"></div>
-            <div class="menuDiv menuPlus">
+                <h3 class="main-sidething-menutitle">General</h3>
+            </header>
+            <div class="bracket-line"></div>
+            <div class="main-sidething-menudiv menuPlus">
                 <i class="fas fa-tasks iconM"></i>
-                <h3 class="menuT">Your lists</h3>
+                <h3 class="main-sidething-menutitle">Your lists</h3>
                 <i id="add" class="fas fa-plus iconM plus"></i>
             </div>
             <div class="listCreated">
                 
-                <div class="bracketM"></div>
+                <div class="bracket-line"></div>
             </div>
             
-        </nav>
+        </section>
 
         <main id="content">
-            <div class="titleCont">
-                <i class="fas fa-bell iconC icoCont"></i>
-                <h1 id="title" class="iconC">General</h1>
-                <i id="addNote" class="fas fa-plus-circle iconC icoPl"></i>
-                <i id="deleLis" class="fas fa-times-circle iconC icoCros"></i>
-            </div>
+            <header class="content-title">
+                <i class="fas fa-bell content-title-part content-title-iconbell"></i>
+                <h1 id="title" class="content-title-part">General</h1>
+                <div class="both-icons">
+                    <i id="addNote" class="fas fa-plus-circle content-title-part content-title-iconadd"></i>
+                    <i id="deleLis" class="fas fa-times-circle content-title-part content-title-icondel"></i>
+                </div>
+            </header>
             
-            <div class="bracketM"></div>
+            <div class="bracket-line"></div>
 
-            <div id="allNotes">
-                <table id="tabal-b">
+            <div id="content-allnotes">
+                <table id="content-allnotes-table">
                     <tbody>
-                        <tr class="first-row">
+                        <tr class="content-allnotes-table-firstrow">
                             <th>Title</th>
                             <th>Description</th>
                             <th>Due date</th>
@@ -58,7 +60,7 @@
                             <th class="check">Status</th>
                         </tr>
                     </tbody>
-                    <tbody id="addons">
+                    <tbody id="content-allnotes-table-addons">
                         
                     </tbody>
                 </table>
@@ -68,9 +70,12 @@
     </div>
 
 
-    <footer class="footer-p">
-        <p class="copyF">Created with &hearts; in 2021</p>
-        <i class="fab fa-github iconF"></i>
+    <footer class="footer">
+        <p class="footer-copy">Created with &hearts; in 2021</p>
+        <a href="https://github.com/vlunaklick" class="footer-icon" target="_blank" >
+            <i class="fab fa-github footer-icon"></i>
+        </a>
+        
     </footer>
 
     <script src="main.js"></script>
