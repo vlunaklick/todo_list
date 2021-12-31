@@ -30,7 +30,7 @@ body{
     height: 100%;
 }
 
-.header-p{
+.nav-header{
     background-color: var(--back-tit-foot);
     display: flex;
     align-items: center;
@@ -40,12 +40,12 @@ body{
     border-bottom: 1px solid #000;
 }
 
-.head-Title{
+.nav-header-title{
     height: 100%;
     width: 100%;
 }
 
-.navI{
+.nav-header-navico{
     display: none;
     text-align: end;
     height: 100%;
@@ -61,7 +61,7 @@ body{
     color: var(--font-col-nav);
 }
 
-.footer-p{
+.footer{
     bottom: 0;
     left: 0;
     background-color: var(--back-tit-foot);
@@ -76,21 +76,21 @@ body{
     font-size: var(--title-h1);
 }
 
-.menuT{
+.main-sidething-menutitle{
     font-size: var(--h3-size);
     margin-left: 1rem;
     color: var(--font-col-nav);
 }
 
-.iconF{
+.footer-icon{
     transition: 0.2s;
 }
 
-.iconF:hover{
+.footer-icon:hover{
     color: var(--hov-icon-foot);
 }
 
-.menuDiv{
+.main-sidething-menudiv{
     display: flex;
     align-items: center;
     height: 5%;
@@ -98,12 +98,12 @@ body{
     border-radius: 5px;
 }
 
-.hoverL:hover{
+.main-sidething-menudiv-hover:hover{
     background-color: var(--menu-hover);
     cursor: pointer;
 }
 
-.navP{
+.main-sidething{
     flex-direction: column;
     width: 15%;
     background-color: var(--menu-nav-res);
@@ -117,7 +117,7 @@ body{
     margin-right: 0.5rem;
 }
 
-#mainthing{
+#main{
     display: flex;
     min-height: calc(100vh - 64px - 48.6px);
     background-color: var(--main-back);
@@ -134,23 +134,23 @@ body{
     height: 100%;
 }
 
-.bracketM{
+.bracket-line{
     border-bottom: 1px solid #000;
     width: 100%;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
-.titleCont{
+.content-title{
     display: flex;
     align-items: center;
 }
 
-.iconC{
+.content-title-part{
     font-size: 2rem;
 }
 
-.icoCont{
+.content-title-iconbell{
     margin-right: 0.4rem;
 }
 
@@ -266,12 +266,12 @@ body{
     flex-direction: column;
     align-items: center;
 }
-#tabal-b{
+#content-allnotes-table{
     width: 100%;
     border-spacing: 0;
 }
 
-.first-row{
+.content-allnotes-table-firstrow{
     height: 50px;
     border-bottom: 1px solid var(--font-col-cont);
     text-align: left;
@@ -286,7 +286,7 @@ th, td{
     margin-right: 1rem;
 }
 
-.titulosNuevos{
+.main-sidething-newtitle{
     display: flex;
     align-items: center;
     height: 5%;
@@ -305,23 +305,23 @@ th, td{
     margin-bottom: 0.5rem;
 }
 
-.icoPl{
+.content-title-iconadd{
     margin-left: auto;
     margin-right: 1rem;
     transition: 0.25;
 }
 
-.icoPl:hover{
+.content-title-iconadd:hover{
     color: var(--hover-plus-cross);
     cursor: pointer;
 }
 
-.icoCros:hover{
+.content-title-icondel:hover{
     color: var(--hover-plus-cross);
     cursor: pointer;
 }
 
-#allNotes{
+#content-allnotes{
     width: 100%;
     height: 100%;
 }
@@ -334,7 +334,7 @@ th, td{
 }
 
 @media screen and (max-width: 1000px) {
-    .navP{
+    .main-sidething{
         border-right: 0;
         width: 100%;
         height: inherit;
@@ -342,15 +342,15 @@ th, td{
         position: absolute;
         background-color: transparent;
     }
-    .menuDiv{
+    .main-sidething-menudiv{
         height: 100%;
         border-radius: 0;
         padding: 0.35rem;
     }
-    .hoverL:hover{
+    .main-sidething-menudiv-hover:hover{
         cursor: pointer;
     }
-    .bracketM{
+    .bracket-line{
         width: 100%;
         margin-top: 0;
         margin-bottom: 0;
@@ -360,28 +360,28 @@ th, td{
         margin-top: 0;
         margin-bottom: 0;
     }
-    #mainthing{
+    #main{
         flex-direction: column;
         min-height: calc(100vh - 57px - 48.6px);
     }
-    .navI{
+    .nav-header-navico{
         display: flex;
         justify-content: end;
     }
-    .menuDiv{
+    .main-sidething-menudiv{
         background-color: var(--menu-nav-responsive);
     }
     .icon{
         margin-right: 1rem;
     }
-    .icoCros{
+    .content-title-icondel{
         margin-right: 1rem;
     }
     #content{
         padding: 0;
         padding-top: 1rem;
     }
-    .titleCont{
+    .content-title{
         margin-left: 1rem;
         margin-bottom: 0.5rem;
     }
