@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
 :root{
     --title-h1: 2rem;
     --h3-size: 1rem;
@@ -150,9 +145,8 @@ p, h1, h2, h3, h4, h5, h6 {
 .main-sidething-menudiv{
     display: flex;
     align-items: center;
-    height: 5%;
     width: 100%;
-    border-radius: 5px;
+    padding: 0.75rem;
 }
 
 .main-sidething-menudiv-hover:hover{
@@ -167,8 +161,6 @@ p, h1, h2, h3, h4, h5, h6 {
     display: flex;
     border-right: 1px solid #000;
     align-items: center;
-    padding: 0.75rem;
-    gap: 1rem;
 }
 
 
@@ -208,7 +200,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .plus{
     display: flex;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     width: 1.5rem;
     height: 1.5rem;
     align-items: center;
@@ -292,7 +284,6 @@ p, h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.8rem;
 }
 #content-allnotes-table{
     width: 100%;
@@ -300,15 +291,15 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .content-allnotes-table-firstrow{
-    height: 50px;
+    height: 3.125rem;
     border-bottom: 1px solid var(--font-col-cont);
     text-align: left;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: var(--font-col-cont);
 }
 th, td{
     border-bottom: 1px solid var(--hov-icon-foot);
-    padding: 10px 8px;
+    padding: .625rem .5rem;
 }
 
 .main-sidething-newtitle{
@@ -325,8 +316,8 @@ th, td{
 }
 
 .bracketClaro{
-    border-bottom: 1px solid rgb(80, 80, 80);
-    width: 90%;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.404);
+    width: 100%;
 }
 
 .content-title-iconadd{
@@ -355,23 +346,17 @@ th, td{
     height: 100%;
 }
 
-
-@media screen and (max-width: 390px) {
-    .titleT{
-        font-size: 1.7rem;
-    }
-}
-
 .buttonsss{
     display: flex;
     gap: 0.5rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 850px) {
     .listCreated{
         gap:0;
     }
-    th, td{
+    th,
+    td{
         font-size: 0.7rem;
     }
     .buttonsss{
@@ -390,7 +375,7 @@ th, td{
         transition: top 0.7s ease-in;
     }
     .hidden{
-        top: 3.6125rem;
+        top: 4.0625rem;
     }
     .main-sidething-menudiv{
         height: 100%;
@@ -410,7 +395,7 @@ th, td{
     }
     #main{
         flex-direction: column;
-        min-height: calc(100vh - 3.6125rem - 2.7625rem);
+        min-height: calc(100vh - 4.0625rem - 2.7625rem);
     }
     .nav-header-navico{
         display: flex;
@@ -421,10 +406,6 @@ th, td{
     }
     #content{
         padding: 0;
-    }
-    #nav-header-navico-responsive{
-        position: relative;
-        right: 1rem;
     }
     .menuPlus,
     .menuGeneral{
@@ -441,7 +422,7 @@ th, td{
         font-size: 1.3rem;
     }
     .content-title{
-        padding: 0.5rem 0;
+        padding: 0.5rem;
     }
 }
 
@@ -466,7 +447,7 @@ th, td{
     color: var(--tit-fot-co);
     box-shadow: var(--shadow-elevation-low);
     border-radius: 0.3rem;
-    width: 120px;
+    width: 7.5rem;
     cursor: pointer;
     transition: background-color 0.5s ease;
 }
